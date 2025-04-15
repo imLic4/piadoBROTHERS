@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>PiadoBROTHERS</title>
+</head>
+<body>
+    <div class="background-image"></div> <!-- Fundo com o emoji de riso -->
+    <h1>Tente não rir!</h1>
+    <h2>O melhor site para disputar piadas com seus amigos!!!</h2>
+
+    <div class="container-principal">
+        <h3 id="caixapiada">sorteie a piada:</h3>
+        <input type="button" value="Gerar piada" id="btn-piada" onclick="gerarpiada()" />
+    </div>
+
+    <h4>Contabilize sua pontuação!</h4>
+    <div class="pontuacao-container">
+        <div class="pts-1">
+            <span id="score">0</span><br />
+            <button onclick="aumentarpontuaçao()">+</button>
+            <button onclick="diminuirpontuaçao()">-</button>
+        </div>
+
+        <div class="pts-2">
+            <span id="score2">0</span><br />
+            <button onclick="aumentarpontuaçao2()">+</button>
+            <button onclick="diminuirpontuaçao2()">-</button>
+        </div>
+    </div>
+
+    <div class="btn-reset">
+        <button onclick="Reset()">Reiniciar</button>
+    </div>
+
+  
+
+    <div class="flags">
+        <h4>Bandeiras de Sinalização</h4>
+        <label>
+            <input type="radio" id="safe" name="flags" />
+            Seguro para crianças
+        </label>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
